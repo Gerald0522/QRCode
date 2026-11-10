@@ -145,7 +145,7 @@ let lectorQR: Html5Qrcode | null = null;
 let iniciando = false;
 let procesandoQR = false;
 
-// Cargar usuarios
+
 function cargarUsuarios() {
   fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => {
@@ -165,7 +165,7 @@ function cargarUsuarios() {
 
 cargarUsuarios();
 
-// Iniciar cámara
+
 async function iniciarEscaner() {
   if (lectorQR || iniciando) return;
 

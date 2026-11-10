@@ -1,3 +1,4 @@
+
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import type { RouteRecordRaw } from 'vue-router';
 
@@ -27,6 +28,10 @@ const routes: RouteRecordRaw[] = [
       {
         path: 'tab3',
         component: () => import('@/views/Tab3Page.vue'),
+      },
+      {
+        path: 'pedidos',
+        component: () => import('@/views/PedidosPage.vue'),
       },
     ],
   },
